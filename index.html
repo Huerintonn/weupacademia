@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@100;200;500&family=Roboto&display=swap"
     rel="stylesheet">
+    <script type="text/javascript" src="main.js" defer></script>
 
     <link rel="icon" href="imgs/icon.png" type="image/png">
     <title>Weup Academia</title>
@@ -22,9 +23,18 @@
 
         <img src="imgs/logo_weup_branca.png" alt="Logo da Weup academia" class="header__logo">
 
-        <nav>
 
-            <ul class="topo__navegacao">
+        </button>
+        
+        
+        <nav id="nav">
+
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+    
+            </button>
+
+            <ul class="topo__navegacao" role="menu">
                 <li class="topo__itens">
                     <a href="#">HOME</a>
                 </li>
@@ -57,7 +67,8 @@
    </section>
 
    <section class="container__sobre">
-        <img src="imgs/fachada.jpg" alt="Fachada da Weup Academia" class="imagem__fachada">
+        
+            <img src="imgs/fachada.jpg" alt="Fachada da Weup Academia" class="imagem__fachada">
 
             <div class="conteudo">
                  <h1 id="sobre-nos">Sobre a Weup:</h1>
@@ -331,11 +342,11 @@
 
    <h2 class="contato__whats"><a href="#">47 9996-0767</a></h2>
 
-    <div  class="contato__email">
+    <!-- <div  class="contato__email">
     <a href="mailto:weup@weupacademia.com.br">
-           weup@weupacademia.com.br
+        weup@weupacademia.com.br
     </a>
-    </div>
+    </div> -->
 
     <div class="contato__redes">
         <ul class="lista__redes">
