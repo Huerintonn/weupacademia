@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@100;200;500&family=Roboto&display=swap"
     rel="stylesheet">
-    <script type="text/javascript" src="main.js" defer></script>
-
     <link rel="icon" href="imgs/icon.png" type="image/png">
     <title>Weup Academia</title>
 
@@ -21,7 +19,7 @@
 
     <header class="topo">
 
-        <img src="imgs/logo_weup_branca.png" alt="Logo da Weup academia" class="header__logo">
+        <a href="#"><img src="imgs/logo_weup_branca.png" alt="Logo da Weup academia" class="header__logo"></a>
 
 
         </button>
@@ -36,22 +34,22 @@
 
             <ul class="topo__navegacao" role="menu">
                 <li class="topo__itens">
-                    <a href="#">HOME</a>
+                    <a class="botao-menu" href="#">HOME</a>
                 </li>
                 <li class="topo__itens">
-                    <a href="#sobre-nos">SOBRE</a>
+                    <a class="botao-menu" href="#sobre-nos">SOBRE</a>
                 </li>
                 <li class="topo__itens">
-                    <a href="#profissionais">PROFISSIONAIS</a>
+                    <a class="botao-menu" href="#profissionais">PROFISSIONAIS</a>
                 </li>
                 <li class="topo__itens">
-                    <a href="#calculo_imc">CALCULE SEU IMC</a>
+                    <a class="botao-menu" href="#calculo_imc">CALCULE SEU IMC</a>
                 </li>
                 <li class="topo__itens">
-                    <a href="#planos">PLANOS</a>
+                    <a class="botao-menu" href="#planos">PLANOS</a>
                 </li>
                 <li class="topo__itens">
-                    <a href="#contato">CONTATO</a>
+                    <a class="botao-menu" href="#contato">CONTATO</a>
                 </li>
             </ul>
 
@@ -164,7 +162,7 @@
         </div>
 
             <div  class="calculadora__imc">
-
+            <!--
                 <form class="formulario__imc">
                     <div class="entradas">
 
@@ -194,16 +192,60 @@
                         </div>
 
                          <div class="entradas__item">
-                             <label for="alturae">Sua altura</label>
+                             <label for="altura">Sua altura</label>
                             <input type="text" id="altura" class=" input__padrao" required placeholder="Altura">
                         </div>            
                     </div>
                 </form>
 
                 <div class="container__calcula">
-                    <button class="botao__calcula">Calcular IMC</button>    
+                    <button class="botao__calcula" id="botao-calcula">Calcular IMC</button>    
                 </div>
-                
+
+                <div class="contato__item">
+                    <label for="contato__mensagem">Resultado IMC</label>
+                    <textarea text id="resultado__imc" class=" input__padrao"></textarea>
+                </div>-->
+                <div id="calc-container">
+                    <div id="imc-form">
+                        <form class="form-inputs">
+                            <div class="form-control">
+                                <label for="height">Altura</label>
+                                <input
+                                type="text"
+                                name="text"
+                                id="height"
+                                placeholder="Exemplo 1,75"/>
+                            </div>
+                            <div class="form-control">
+                                <label for="weight">Peso</label>
+                                <input
+                                type="text"
+                                name="text"
+                                id="weight"
+                                placeholder="Exemplo 70,5"/>
+                            </div>
+                            <div class="action-control">
+                                <button id="calc-btn">Calcular</button>
+                                <button id="clear-btn">Limpar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="result-container" class="hide">
+                    <p id="imc-number">Seu IMC: <span></span></p>
+                    <p id="imc-info">Situação Atual: <span></span></p>
+                    <h3>Confira as classificações:</h3>
+                    <div id="imc-table">
+                        <div class="table-header">
+                            <h4>IMC</h4>
+                            <h4>Classificação</h4>
+                            <h4>Obesidade</h4>
+                        </div>
+                      
+                    </div>
+                    <button id="back-btn">Voltar</button>
+                </div>
 
             </div>
 
@@ -323,7 +365,7 @@
                            <label for="contato__mensagem">Mensagem</label>
                            <textarea text id="contato__mensagem" class=" input__padrao" required placeholder="Digite sua mensagem"></textarea>
                        </div>
-                      
+                                             
          
                    </div>
                    <div class="contato__item">
@@ -419,4 +461,6 @@
 </main>
 
 </body>
+
+<script type="text/javascript" src="main.js"></script>
 </html>
