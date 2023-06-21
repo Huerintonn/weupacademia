@@ -71,35 +71,38 @@ body {
 /*Sobre Nos*/
 
 .container__sobre {
+    max-width: 1400px;
+    margin: auto;
     justify-content: center;
     display: flex;
     flex: 1;
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 50px;
     padding: 5rem;
 }
 
 .imagem__fachada {
-    width: 60%;
+    width: 500px;
+    height: auto;
     align-self: center;
 
 }
 
 .conteudo {
+    width: 50%;
     color: var(--cinza-escuro);
     align-self: center;
 }
 
 h1 {
-    margin: 1em 1em 0.5em 1em;
+    margin: 0 1em 0.5em 0;
     font-size: 30px;
     font-weight: 700;
     text-align: left;
 }
 
 .texto__paragrafo {
-    text-align: left;
-    margin-left: 2em;
+    text-align: justify;
     margin-bottom: 2rem;
 }
 
@@ -107,7 +110,7 @@ h1 {
 
 .container__profissionais {
     text-align: center;
-        margin: 5em auto;
+    margin: 5em auto;
 }
 
 h2 {
@@ -597,7 +600,18 @@ button:hover {
     .imagem__fachada {
         width: 90%;
     }
-    
+
+    .conteudo {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .texto__paragrafo {
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
 }
 
 
@@ -742,91 +756,111 @@ button:hover {
 
 
     /*Sobre Responsivo*/
-
-    /*Profissionais Responsivo*/
-
-    .container__profissionais {
-        width: 100%;
-        padding: 0;
-    }
-
-    .profissionais__lista {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-    }
-
-    .profissionais__item {
-        margin: 1em;
-    }
-
-    /*Planos Responsivo*/
-
-    .container__planos {
-        width: 100%;
-    }
-
-    .planos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap
-    }
-
-    .plano__item {
-        margin: 1em;
-        width: 300px;
-        height: 500px;
-
-    }
-
-    .plano__img {
-        width: 300px;
-        height: 500px;
-        border-radius: 50px;
-    }
-
-    /*IMC Responsivo*/
-
-    .container__imc {
-        width: 100%;
-    }
-
-    .imc {
+    .container__sobre {
+        max-width: 100%;
+        text-align: center;
         display: block;
-        justify-content: center;
-    }
-
-    .texto__imc {
         margin: auto;
     }
 
-
-
-    /*Contatos Responsivos*/
-    .container__contato {
+    .imagem__fachada {
         width: 100%;
-        padding: 0;
     }
 
-    .contato {
-        display: block;
-        justify-content: center;
-
-    }
-
-
-    .contato__entradas {
-        flex-direction: column;
+    .conteudo {
         width: 100%;
-        margin: auto;
     }
 
-    #contato__email,
-    #contato__assunto,
-    #contato__mensagem {
-        width: 250px;
+    .texto__paragrafo {
+        text-align: justify;
+        margin-bottom: 2rem;
     }
 
 
+
+
+/*Profissionais Responsivo*/
+
+.container__profissionais {
+    width: 100%;
+    padding: 0;
+}
+
+.profissionais__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.profissionais__item {
+    margin: 1em;
+}
+
+/*Planos Responsivo*/
+
+.container__planos {
+    width: 100%;
+}
+
+.planos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.plano__item {
+    margin: 1em;
+    width: 300px;
+    height: 500px;
+
+}
+
+.plano__img {
+    width: 300px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+/*IMC Responsivo*/
+
+.container__imc {
+    width: 100%;
+}
+
+.imc {
+    display: block;
+    justify-content: center;
+}
+
+.texto__imc {
+    margin: auto;
+}
+
+
+
+/*Contatos Responsivos*/
+.container__contato {
+    width: 100%;
+    padding: 0;
+}
+
+.contato {
+    display: block;
+    justify-content: center;
+
+}
+
+
+.contato__entradas {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+#contato__email,
+#contato__assunto,
+#contato__mensagem {
+    width: 250px;
+}
 }
